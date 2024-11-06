@@ -1,0 +1,196 @@
+header{
+margin-top: -10px;
+margin-left: -10px;
+position: fixed;
+background-image: url("BannerBackground.png"); 
+width: 101%; height: 62.5px;
+
+background-size: auto 101%;
+
+background-position: bottom 0px right -62.5px;
+z-index: 10;
+animation: Gradient 2s;
+    background-color: rgba(7, 43, 82, 1)
+
+}
+
+@keyframes Gradient{
+0%{
+    background-color: rgba(7, 43, 82, 0)
+
+}
+
+100%{
+    background-color: rgba(7, 43, 82, 1)
+
+}
+
+}
+
+
+
+#menubar{
+    width: 37.5px;
+grid-column: 1;
+margin-top: -42.5px;
+margin-left: 12.5px;
+}
+
+#logo{
+    width: 120px;
+    grid-column: 2;
+    margin-top: -55px;
+    margin-left: 20px;
+}
+
+
+.MainHeader{
+    display: grid;
+align-content: center;
+grid-template-columns: 37.5px auto;
+width: 200px;
+height: 0px; 
+border-right: 62.5px solid transparent;
+border-top: 62.5px solid rgb(255, 255, 255);
+
+}
+
+
+
+.Heroimg{
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    }
+
+.Carhero{
+/*margin-top: -2%;
+margin-left: -10px; */
+margin-top: 4%;
+margin-left: 160px;
+text-align: center;
+position: absolute;
+    -o-object-fit: cover;
+    object-fit: cover;
+    width: 80%;
+    height: 80%;
+    animation: CarSize 6s;
+}
+
+@keyframes CarSize{
+
+1%{ transform: scale(1.25,1.25)
+
+}
+70%{ transform: scale(1.25,1.25)
+
+}
+
+100%{
+    transform: scale(1,1)
+
+}
+}
+
+
+
+
+
+
+
+
+
+.BackgroundHero{
+    width: 102%;
+    position: relative;
+    z-index: -1;
+    margin-left: -10px;
+    margin-top: -10px;
+}
+
+
+.CarAnim{
+top: -156.52vw;
+width: 102%;
+height:52.1vw;
+ background-color: rgb(255, 255, 255);
+background-size: 100vw auto;
+    position: relative;
+    z-index: 4;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, -50% 100%, 0% 87%, 
+    30% 87%, 33% 82%, 80% 82%, 90% 64%, 90% 23%, 80% 5%, 0% 5%);
+    animation-delay: 4s;
+    animation: slideIn 5s;
+    left: -10px;
+}
+@keyframes slideIn{
+    from{
+        transform: translateX(300%)
+          }
+    
+    
+    }
+
+
+.AnimBars{
+    top: -52.35vw;
+    width: 102%;
+    height:52.1vw;
+    background-size: 100vw auto;
+        position: relative;
+        z-index: 3;
+        animation-delay: 4s;
+        animation: Gradient2 2s;
+        background-color: rgb(255, 255, 255);
+        clip-path: polygon(
+            0% 0%, 100% 0%, 100% 5.5%, 0% 5.5%, 0% 90%
+    
+            );
+    left: -10px;
+}
+    
+   
+    .AnimBars2{
+        top: -104.45vw;
+        width: 102%;
+        height:52.1vw;
+        background-size: 100vw auto;
+            position: relative;
+            z-index: 3;
+            animation-delay: 4s;
+            animation: Gradient2 2s;
+            background-color: rgb(255, 255, 255);
+            clip-path: polygon(
+                0% 87%, 100% 87%, 100% 100%, 0% 100%
+        
+                );
+                left: -10px;
+    
+            
+        
+        }
+    
+    @keyframes Gradient2{
+    0%{
+        background-color: rgba(255, 255, 255, 0)
+    
+    }
+    
+    100%{
+        background-color: rgb(255, 255, 255)
+    
+    }
+}
+
+
+
+
+
+
+
+
+
+/* The first number for pair in polygon refers to distance from the top left
+on the X-axis, and the second is the same for the Y-axis. Each one of the pairs
+represents a point.*/
+
